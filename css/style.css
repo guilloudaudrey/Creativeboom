@@ -1,4 +1,4 @@
-
+	
 body{
     margin:0;
     width: 100%;
@@ -6,7 +6,7 @@ body{
 
 /*-------------------------header-------------------------*/
 
-.bigheader{
+header{
     display: flex;
     width: 100%;
     height: 75px;
@@ -19,7 +19,7 @@ body{
     z-index: 5;
 }
 
-.smallheader{
+header #menu{
     display: none;
 }
 
@@ -328,7 +328,7 @@ button {
 }
 
 /*-------------------------social networks section-------------------------*/
-
+	
 .reseaux {
     height: 130px;
     display: flex;
@@ -392,48 +392,31 @@ footer a:hover {
 
 @media screen and (max-width: 1024px){
 
-    header{
-    display: flex;
-    width: 100%;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    background: white;
-    border-bottom: 1px solid #ddd9d9;  
-    z-index: 5;
-}
-
-.smallheader{
-    display: flex;
-    width: 100%;
+header{
     height: 48px;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    background: white;
-    border-bottom: 1px solid #ddd9d9;  
-    z-index: 5;
-    padding-left: 30px;
+    width: 100%;
+    margin: auto;
 }
 
-.bigheader{
+header #menu{
+    display: inline;
+    min-width: 20px;
+    margin-left: 31px;
+}
+
+nav > ul > li:not(#search){
     display: none;
+    min-width: 20px;
 }
-
 
 .logo img{
     height: 19px;
+    margin-left: 31px;
 }
-
 
 article {
     width: 47%; 
 }
-
-
 
 footer ul {
     text-transform: uppercase;
@@ -465,6 +448,10 @@ footer ul {
 
 @media screen and (max-width: 550px){
 
+    header{
+justify-content: center;
+}
+
 .banniere{
     display: none;
 }
@@ -489,6 +476,11 @@ article {
 
 .newsletter {
     font-size: 1.1em;
+}
+
+footer {
+    font-size: 0.8em;
+    padding: 20px;
 }
 
 }
