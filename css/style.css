@@ -411,7 +411,7 @@ nav > ul > li:not(#search){
 
 .logo img{
     height: 19px;
-    margin-left: 31px;
+    margin-left: 25px;
 }
 
 article {
@@ -448,8 +448,20 @@ footer ul {
 
 @media screen and (max-width: 550px){
 
-    header{
+header{
 justify-content: center;
+padding-left: 40px;
+}
+
+nav > ul > li{
+    display: none;
+}
+
+.logo img{
+    height: 19px;
+    min-height: 10px;
+   margin: 0;
+   padding: 0;
 }
 
 .banniere{
