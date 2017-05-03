@@ -167,8 +167,8 @@ nav .menu ul li a:hover{
 .articlesgallery{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 95%;
+    justify-content: space-between;
+    width: 93%;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -233,19 +233,19 @@ article img{
     font-size: 17px;
     font-weight: bold;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .editorspicks{
     display: flex;
  flex-wrap: wrap;
-    justify-content: space-around;
-    width:  95%;
+    justify-content: space-between;
+    width:  93%;
     margin-bottom: 25px;
 }
 
 .editorspicks article {
-    width: 46%;
+    width: 48%;
     margin: 0;
 }
 
@@ -256,13 +256,13 @@ article img{
 /*-------------------------banner ad-------------------------*/
 
 aside {
-    text-align: center;
+    margin: auto;
     margin-bottom: 30px;
-    width: 100%;
+    width: 93%;
 }
 
 aside img {
-    width: 93%;
+    width: 100%;
 }
 
 /*-------------------------load more button-------------------------*/
@@ -317,7 +317,8 @@ input {
     margin: 7px;
 }
 
-button { 
+#submit { 
+
     height: 45px;
     width: 120px;
     color: white;
@@ -327,13 +328,38 @@ button {
     font-size: 16px;
 }
 
+#submit:hover {
+    background: gray;
+    border-color: gray;
+}
+
+#submit:active {
+    animation-name: animBouton;
+    animation-duration: 2s;
+}
+
 /*-------------------------social networks section-------------------------*/
 	
 .reseaux {
     height: 130px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
+}
+
+.icones{
+    text-align: center;
+    width: 100%;
+    margin-top: 17px;
+}
+
+.icones i{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.2em;
+    color: black;
 }
 
 /*-------------------------footer-------------------------*/
@@ -474,15 +500,15 @@ nav > ul > li{
 }
 
 article {
-    width: 95%; 
+    width: 100%; 
 }
 
 .editorspicks{
-    width:  95%;
+    width:  93%;
 }
 
 .editorspicks article {
-    width: 95%;
+    width: 100%;
     margin: 0;
 }
 
@@ -506,6 +532,18 @@ opacity: 0;
     100% {
 opacity: 100%;
     }
+}
+
+
+@Keyframes animBouton {
+   0% {
+    height: 45px;
+    width: 120px;
+   }
+   100% {
+    height: 360px;
+    width: 120px;
+   }
 }
 
 
